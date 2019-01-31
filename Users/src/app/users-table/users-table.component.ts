@@ -1,3 +1,4 @@
+import { Response } from './../domain/response';
 import { UsersService } from './../users.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { User } from '../domain/user';
@@ -19,7 +20,7 @@ export class UsersTableComponent implements OnInit, OnDestroy {
     this.usersService.getAll()
     .pipe(takeWhile(x => this.isAlive))
     .subscribe(results => {
-      this.users = results;
+      this.users = results.payload;
     });
   }
 
