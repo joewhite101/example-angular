@@ -1,8 +1,13 @@
 package com.cdp.services;
 
+import com.cdp.model.Portal;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
 import java.util.ArrayList;
 import java.util.List;
 
+ 
 import org.apache.log4j.spi.LoggerFactory;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.ResponseEntity;
@@ -14,6 +19,7 @@ import com.cdp.model.Portaluser;
 /**
  * Created by josephwhite on 1/31/19.
  */
+@Service
 public class MockJsonService {
 	
 	//private static final Logger log = LoggerFactory.getLogger(MockJsonService.class);

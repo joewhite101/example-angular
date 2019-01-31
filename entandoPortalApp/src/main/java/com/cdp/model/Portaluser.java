@@ -5,6 +5,9 @@ public class Portaluser {
 
     private String id;
     private String name;
+    private String username;
+    private String email;
+    private Address address;
 
     public String getId() {
         return id;
@@ -46,8 +49,5 @@ public class Portaluser {
         this.address = address;
     }
 
-    private String username;
-    private String email;
-    private Address address;
 
 }
