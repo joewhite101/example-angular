@@ -22,7 +22,7 @@ public class PortalController {
 
     @RestAccessControl(permission = "")
     @RequestMapping(value = "/portals", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public RestResponse<Portal> testInstanceValues() {
+    public RestResponse<List<Portal>> getPortals() {
 
         return new RestResponse<>(service.getPortals());
     }
@@ -32,7 +32,7 @@ public class PortalController {
     @RequestMapping(value = "/portalDemo/users", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public RestResponse<Portal> testInstanceValues() {
 
-        return new RestResponse<>(service.getPortals());
+        return new RestResponse<>(service.getUsers());
     }
 
 }
