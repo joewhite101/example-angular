@@ -1,6 +1,6 @@
 package com.cdp.model;
 
-public class PortalUser {
+public class Portaluser {
 
 
     private String id;
