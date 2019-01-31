@@ -3,11 +3,13 @@ package com.cdp.services;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.log4j.spi.LoggerFactory;
 import org.apache.logging.log4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestTemplate;
 
 import com.cdp.model.Portal;
+import com.cdp.model.Portaluser;
 
 /**
  * Created by josephwhite on 1/31/19.
@@ -66,6 +68,28 @@ public class MockJsonService {
         
         return portals;
         
+    }
+    
+    public static Portaluser[] getPortalusers (){
+    	
+    	
+    	/**
+    	 * ResponseEntity<Object[]> responseEntity = restTemplate.getForEntity(urlGETList, Object[].class);
+Object[] objects = responseEntity.getBody();
+MediaType contentType = responseEntity.getHeaders().getContentType();
+HttpStatus statusCode = responseEntity.getStatusCode();
+    	 */
+    	RestTemplate restTemplate = new RestTemplate();
+    	ResponseEntity<Portaluser[]> responseEntityPortalusers=   restTemplate.getForEntity("https://jsonplaceholder.typicode.com/users", Portaluser[].class);
+    	Portaluser[] portalusers = responseEntityPortalusers.getBody();
+        return portalusers;
+        //log.info(quote.toString());
+    }
+    
+    public static void main( String[] args ){
+        System.out.println( "Hello World!" );
+        Portaluser[] portalusers =  getPortalusers ();
+        System.out.println(portalusers[0].getName());
     }
 	
 }
