@@ -1,0 +1,19 @@
+<table class="table table-bordered" *ngIf="users.length > 0">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>User name</th>
+      <th>email</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of users; let i = index">
+      <td>{{i + 1}}</td>
+      <td>{{u.username}}</td>
+      <td>{{u.email}}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="alert-info" *ngIf="users.length === 0">
+  Nessun elemento
+</div>
