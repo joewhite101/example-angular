@@ -76,7 +76,7 @@ public class MockJsonService {
         
     }
     
-    public static Portaluser[] getPortalusers (){
+    public Portaluser[] getPortalusers (){
     	
     	
     	/**
@@ -94,8 +94,8 @@ HttpStatus statusCode = responseEntity.getStatusCode();
     
     public static void main( String[] args ){
         System.out.println( "Hello World!" );
-        Portaluser[] portalusers =  getPortalusers ();
-        System.out.println(portalusers[0].getName());
+        //Portaluser[] portalusers =  getPortalusers ();
+        //System.out.println(portalusers[0].getName());
     }
 	
 }
