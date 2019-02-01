@@ -75,3 +75,10 @@ INSERT INTO widgetcatalog (code,titles,parameters,plugincode,parenttypecode,defa
 </properties>
 
 ',NULL,NULL,NULL,NULL,0,'free');
+INSERT INTO widgetcatalog (code,titles,parameters,plugincode,parenttypecode,defaultconfig,locked,maingroup) VALUES ('UDT','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">UserDetails</property>
+<property key="it">UserDetails</property>
+</properties>
+
+',NULL,NULL,NULL,NULL,0,'free');

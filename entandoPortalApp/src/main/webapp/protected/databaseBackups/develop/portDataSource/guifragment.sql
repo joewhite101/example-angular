@@ -1528,7 +1528,7 @@ INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) V
 		<p><@wp.i18n key="USER_STATUS_CREDENTIALS_INVALID" /></p>
 	</div>
 	</#if>
-	<form action="<@wp.url page="users"/>" method="post" class="form-horizontal margin-medium-top">
+	<form action="<@wp.url page="userdetailspage"/>" method="post" class="form-horizontal margin-medium-top">
 		<#if (RequestParameters.returnUrl??) >
 		<input type="hidden" name="returnUrl" value="${RequestParameters.returnUrl}" />
 		</#if>
@@ -1549,3 +1549,11 @@ INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) V
 		</div>
 	</form>
 </#if>',NULL,0);
+INSERT INTO guifragment (code,widgettypecode,plugincode,gui,defaultgui,locked) VALUES ('UDT','UDT',NULL,'<#assign wp=JspTaglibs["/aps-core"]>
+
+  <app-root></app-root>
+<script type="text/javascript" src="<@wp.resourceURL />static/angular-resources/userdetails/runtime.js"></script>
+<script type="text/javascript" src="<@wp.resourceURL />static/angular-resources/userdetails/polyfills.js"></script>
+<script type="text/javascript" src="<@wp.resourceURL />static/angular-resources/userdetails/styles.js"></script>
+<script type="text/javascript" src="<@wp.resourceURL />static/angular-resources/userdetails/vendor.js"></script>
+<script type="text/javascript" src="<@wp.resourceURL />static/angular-resources/userdetails/main.js"></script>',NULL,0);

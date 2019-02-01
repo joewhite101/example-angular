@@ -868,5 +868,7 @@
             <version>${entando.version}</version>
             <type>war</type>
         </dependency>
+        
+
     </dependencies>
 </project>
