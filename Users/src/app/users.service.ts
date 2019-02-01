@@ -16,7 +16,7 @@ export class UsersService {
 
   getById(id: number): Observable<ResponseUser> {
     console.log('windows second', window);
-    this.baseUrl = window['PROPERTY']['baseUrl'];
+    this.baseUrl = window['baseUrl'];
     console.log('base url', this.baseUrl);
     return this.httpClient.get<ResponseUser>(this.baseUrl + '/api/portalDemo/users/' + id);
   }
