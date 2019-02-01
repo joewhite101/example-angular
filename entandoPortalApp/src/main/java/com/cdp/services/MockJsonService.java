@@ -1,39 +1,24 @@
 package com.cdp.services;
 
+import com.agiletec.aps.system.services.group.GroupManager;
 import com.cdp.model.Portal;
+import com.cdp.model.Portaluser;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
- 
-import org.apache.log4j.spi.LoggerFactory;
-import org.apache.logging.log4j.Logger;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.client.RestTemplate;
 
-import com.cdp.model.Portal;
-import com.cdp.model.Portaluser;
-
-/**
- * Created by josephwhite on 1/31/19.
- */
 @Service
 public class MockJsonService {
 	
-	//private static final Logger log = LoggerFactory.getLogger(MockJsonService.class);
-/**
- * 
-/posts	100 posts
-/comments	500 comments
-/albums	100 albums
-/photos	5000 photos
-/todos	200 todos
-/users
- * @return
- */
-	
+
+    @Autowired
+    GroupManager groupManager;
 	
     public List<Portal> getPortals() {
         RestTemplate restTemplate = new RestTemplate();
@@ -76,7 +61,7 @@ public class MockJsonService {
         
     }
     
-    public Portaluser[] getPortalusers (){
+    public List<Portaluser> getPortalusers (){
     	
     	
     	/**
@@ -88,7 +73,7 @@ HttpStatus statusCode = responseEntity.getStatusCode();
     	RestTemplate restTemplate = new RestTemplate();
     	ResponseEntity<Portaluser[]> responseEntityPortalusers=   restTemplate.getForEntity("https://jsonplaceholder.typicode.com/users", Portaluser[].class);
     	Portaluser[] portalusers = responseEntityPortalusers.getBody();
-        return portalusers;
+        return Arrays.asList(portalusers);
         //log.info(quote.toString());
     }
     
