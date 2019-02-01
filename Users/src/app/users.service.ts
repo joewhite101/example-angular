@@ -11,13 +11,13 @@ export class UsersService {
   constructor(private httpClient: HttpClient) { }
 
   getAll(): Observable<ResponseUsers> {
-    return this.httpClient.get<ResponseUsers>(this.baseUrl + '/api/portalDemo/users');
+    return this.httpClient.get<ResponseUsers>(this.baseUrl + 'api/portalDemo/users');
   }
 
   getById(id: number): Observable<ResponseUser> {
     console.log('windows second', window);
     this.baseUrl = window['baseUrl'];
     console.log('base url', this.baseUrl);
-    return this.httpClient.get<ResponseUser>(this.baseUrl + '/api/portalDemo/users/' + id);
+    return this.httpClient.get<ResponseUser>(this.baseUrl + 'api/portalDemo/users/' + id);
   }
 }
