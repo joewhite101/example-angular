@@ -16,8 +16,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     HttpClientModule,
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule//,
+    // AppRoutingModule
   ],
   providers: [
     UsersService
