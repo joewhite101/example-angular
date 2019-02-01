@@ -7,10 +7,10 @@ export class StreamServe {
   dataProvvedimento: string;
   TOF: string;
   nomeSottoscrittore: string;
+  cognomeSottoscrittoreRelata: string;
   qualificaSottoscrittoreRelata: string;
   dataEmissione: string;
   ragioneSocialeTesoreria: string;
   scopoDelFinanziamento: string;
-  qualificaSottoscrittore: string;
   luogoEmissione: string;
 }

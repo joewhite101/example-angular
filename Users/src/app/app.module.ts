@@ -1,4 +1,4 @@
-
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -10,17 +10,24 @@ import { AppRoutingModule } from './app-routing.module';
 import { UsersService } from './services/users.service';
 import { AuthService } from './services/auth.service';
 import { AuthInterceptorService } from './utility/auth-interceptor.utility';
+import { StreamServeComponent } from './stream-serve/stream-serve.component';
+import { CommonModule } from '@angular/common';
+import { StreamServeService } from './services/stream-serve.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersTableComponent,
-    UserShowComponent
+    UserShowComponent,
+    StreamServeComponent,
+
   ],
   imports: [
     HttpClientModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CommonModule,
+    FormsModule
   ],
   providers: [
     UsersService,
@@ -29,7 +36,8 @@ import { AuthInterceptorService } from './utility/auth-interceptor.utility';
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptorService,
       multi: true
-    }
+    },
+    StreamServeService
   ],
   bootstrap: [AppComponent]
 })

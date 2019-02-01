@@ -1,0 +1,83 @@
+<form #f="ngForm" *ngIf="streamServe">
+  <!--<pre>
+      f.valid: {{f.valid}}
+      f.invalid: {{f.invalid}}
+      f.touched: {{f.touched}}
+      f.untouched: {{f.untouched}}
+      f.dirty: {{f.dirty}}
+      f.pristine: {{f.pristine}}
+  </pre>-->
+
+  <div class="form-group">
+      <label for="id">importoPrestito</label>
+      <input type="text" class="form-control" id="id" name="id" aria-describedby="id" readonly [(ngModel)]="streamServe.importoPrestito" required>
+    </div>
+
+  <div class="form-group">
+    <label for="firstName">Nome Sottoscrittore</label>
+    <input type="text" class="form-control" id="nomeSottoscrittore" name="nomeSottoscrittore" aria-describedby="nomeSottoscrittore" placeholder="Enter nomeSottoscrittore" [(ngModel)]="streamServe.nomeSottoscrittore" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">Cognome Sottoscrittore</label>
+    <input type="text" class="form-control" id="cognomeSottoscrittore" name="cognomeSottoscrittore" aria-describedby="cognomeSottoscrittore" placeholder="Enter cognomeSottoscrittore" [(ngModel)]="streamServe.cognomeSottoscrittore" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">dataEmissione</label>
+    <input type="text" class="form-control" id="dataEmissione" name="dataEmissione" aria-describedby="dataEmissione" placeholder="Enter dataEmissione" [(ngModel)]="streamServe.dataEmissione" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">dataProvvedimento</label>
+    <input type="text" class="form-control" id="dataProvvedimento" name="dataProvvedimento" aria-describedby="dataProvvedimento" placeholder="Enter dataProvvedimento" [(ngModel)]="streamServe.dataProvvedimento" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">descrizioneEnteBeneficiario</label>
+    <input type="text" class="form-control" id="descrizioneEnteBeneficiario" name="descrizioneEnteBeneficiario" aria-describedby="descrizioneEnteBeneficiario" placeholder="Enter descrizioneEnteBeneficiario" [(ngModel)]="streamServe.descrizioneEnteBeneficiario" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">Nome luogoEmissione</label>
+    <input type="text" class="form-control" id="luogoEmissione" name="luogoEmissione" aria-describedby="luogoEmissione" placeholder="Enter luogoEmissione" [(ngModel)]="streamServe.luogoEmissione" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">nomeSottoscrittoreRelata</label>
+    <input type="text" class="form-control" id="nomeSottoscrittoreRelata" name="nomeSottoscrittoreRelata" aria-describedby="nomeSottoscrittoreRelata" placeholder="Enter nomeSottoscrittoreRelata" [(ngModel)]="streamServe.nomeSottoscrittoreRelata" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">cognomeSottoscrittoreRelata</label>
+    <input type="text" class="form-control" id="cognomeSottoscrittoreRelata" name="cognomeSottoscrittoreRelata" aria-describedby="cognomeSottoscrittoreRelata" placeholder="Enter cognomeSottoscrittoreRelata" [(ngModel)]="streamServe.cognomeSottoscrittoreRelata" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">qualificaSottoscrittoreRelata</label>
+    <input type="text" class="form-control" id="qualificaSottoscrittoreRelata" name="qualificaSottoscrittoreRelata" aria-describedby="qualificaSottoscrittoreRelata" placeholder="Enter qualificaSottoscrittoreRelata" [(ngModel)]="streamServe.qualificaSottoscrittoreRelata" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">tipoProdotto</label>
+    <input type="text" class="form-control" id="tipoProdotto" name="tipoProdotto" aria-describedby="qualificaSottoscrittoreRelata" placeholder="Enter tipoProdotto" [(ngModel)]="streamServe.tipoProdotto" required>
+  </div>
+
+
+  <div class="form-group">
+    <label for="firstName">TOF</label>
+    <input type="text" class="form-control" id="TOF" name="TOF" aria-describedby="TOF" placeholder="Enter TOF" [(ngModel)]="streamServe.TOF" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">ragioneSocialeTesoreria</label>
+    <input type="text" class="form-control" id="ragioneSocialeTesoreria" name="ragioneSocialeTesoreria" aria-describedby="ragioneSocialeTesoreria" placeholder="Enter ragioneSocialeTesoreria" [(ngModel)]="streamServe.ragioneSocialeTesoreria" required>
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">scopoDelFinanziamento</label>
+    <input type="text" class="form-control" id="scopoDelFinanziamento" name="scopoDelFinanziamento" aria-describedby="scopoDelFinanziamento" placeholder="Enter scopoDelFinanziamento" [(ngModel)]="streamServe.scopoDelFinanziamento" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="onSubmit(f)" [disabled]="f.invalid" >Save</button>
+</form>
