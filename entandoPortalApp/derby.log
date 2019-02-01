@@ -1,7 +1,7 @@
 ----------------------------------------------------------------
-Fri Feb 01 11:18:28 CET 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0168-a891-1b85-000034776650 
-on database directory /projects/entando/example-angular/entandoPortalApp/target/derby/production/exampleAngularPort  with class loader ClassRealm[plugin>org.eclipse.jetty:jetty-maven-plugin:9.4.8.v20180619, parent: sun.misc.Launcher$AppClassLoader@3d4eac69] 
+Fri Feb 01 14:56:34 CET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a816c00e-0168-a958-c6ce-000028d57a00 
+on database directory /projects/entando/example-angular/entandoPortalApp/target/derby/production/exampleAngularPort  with class loader ClassRealm[plugin>org.eclipse.jetty:jetty-maven-plugin:9.4.8.v20180619, parent: sun.misc.Launcher$AppClassLoader@18b4aac2] 
 Loaded from file:/Users/josephwhite/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_162-b12
@@ -9,9 +9,9 @@ user.dir=/projects/entando/example-angular/entandoPortalApp
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
 ----------------------------------------------------------------
-Fri Feb 01 11:18:29 CET 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a02ac013-0168-a891-1b85-000034776650 
-on database directory /projects/entando/example-angular/entandoPortalApp/target/derby/production/exampleAngularServ  with class loader ClassRealm[plugin>org.eclipse.jetty:jetty-maven-plugin:9.4.8.v20180619, parent: sun.misc.Launcher$AppClassLoader@3d4eac69] 
+Fri Feb 01 14:56:34 CET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.9.1.0 - (1344872): instance a02ac013-0168-a958-c6ce-000028d57a00 
+on database directory /projects/entando/example-angular/entandoPortalApp/target/derby/production/exampleAngularServ  with class loader ClassRealm[plugin>org.eclipse.jetty:jetty-maven-plugin:9.4.8.v20180619, parent: sun.misc.Launcher$AppClassLoader@18b4aac2] 
 Loaded from file:/Users/josephwhite/.m2/repository/org/apache/derby/derby/10.9.1.0/derby-10.9.1.0.jar
 java.vendor=Oracle Corporation
 java.runtime.version=1.8.0_162-b12

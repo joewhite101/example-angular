@@ -1,6 +1,7 @@
 package com.cdp.controllers;
 
 
+import com.agiletec.aps.system.services.role.Permission;
 import com.cdp.model.Portal;
 import com.cdp.model.Portaluser;
 import com.cdp.services.MockJsonService;
@@ -33,7 +34,7 @@ public class PortalController {
         return new RestResponse<>(service.getPortalusers());
     }
 
-    @RestAccessControl(permission = "")
+    @RestAccessControl(permission = Permission.SUPERUSER)
     @RequestMapping(value = "/portalDemo/users/{userId}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public RestResponse<Portaluser> getByUserId(@PathVariable String userId) {
         return new RestResponse<>(service.getPortalUserById(userId));
