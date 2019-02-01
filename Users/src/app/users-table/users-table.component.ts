@@ -1,7 +1,8 @@
-import { UsersService } from './../users.service';
+
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { User } from '../domain/user';
 import { takeWhile, delay } from 'rxjs/operators';
+import { UsersService } from '../services/users.service';
 
 @Component({
   selector: 'app-users-table',

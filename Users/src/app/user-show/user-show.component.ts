@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { takeWhile } from 'rxjs/operators';
-import { UsersService } from '../users.service';
 import { User } from '../domain/user';
+import { UsersService } from '../services/users.service';
 
 @Component({
   selector: 'app-user-show',

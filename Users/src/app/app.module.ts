@@ -1,4 +1,4 @@
-import { UsersService } from './users.service';
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -7,6 +7,7 @@ import { UsersTableComponent } from './users-table/users-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserShowComponent } from './user-show/user-show.component';
 import { AppRoutingModule } from './app-routing.module';
+import { UsersService } from './services/users.service';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,8 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     HttpClientModule,
-    BrowserModule//,
-    // AppRoutingModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     UsersService
