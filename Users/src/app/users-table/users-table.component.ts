@@ -1,4 +1,3 @@
-import { Response } from './../domain/response';
 import { UsersService } from './../users.service';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { User } from '../domain/user';

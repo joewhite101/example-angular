@@ -1,5 +1,9 @@
 import { User } from './user';
 
-export class Response {
+export class ResponseUsers {
   payload: Array<User>;
+}
+
+export class ResponseUser {
+  payload: User;
 }
