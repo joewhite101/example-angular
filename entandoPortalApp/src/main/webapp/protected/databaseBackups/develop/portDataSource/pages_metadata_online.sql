@@ -35,23 +35,6 @@ INSERT INTO pages_metadata_online (code,titles,modelcode,showinmenu,extraconfig,
 </config>
 
 ','2019-01-31 15:35:35');
-INSERT INTO pages_metadata_online (code,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('userdetailspage','<?xml version="1.0" encoding="UTF-8"?>
-<properties>
-<property key="en">UserDetailsPage</property>
-<property key="it">UserDetailsPage</property>
-</properties>
-
-','service',1,'<?xml version="1.0" encoding="UTF-8"?>
-<config>
-  <useextratitles>false</useextratitles>
-  <extragroups>
-    <group name="administrators" />
-  </extragroups>
-  <charset>utf-8</charset>
-  <mimeType>text/html</mimeType>
-</config>
-
-','2019-02-01 10:38:41');
 INSERT INTO pages_metadata_online (code,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('login','<?xml version="1.0" encoding="UTF-8"?>
 <properties>
 <property key="en">Login</property>
@@ -66,3 +49,20 @@ INSERT INTO pages_metadata_online (code,titles,modelcode,showinmenu,extraconfig,
 </config>
 
 ','2019-02-01 10:47:36');
+INSERT INTO pages_metadata_online (code,titles,modelcode,showinmenu,extraconfig,updatedat) VALUES ('userdetailspage','<?xml version="1.0" encoding="UTF-8"?>
+<properties>
+<property key="en">UserDetailsPage</property>
+<property key="it">UserDetailsPage</property>
+</properties>
+
+','service',1,'<?xml version="1.0" encoding="UTF-8"?>
+<config>
+  <useextratitles>false</useextratitles>
+  <extragroups>
+    <group name="free" />
+  </extragroups>
+  <charset>utf-8</charset>
+  <mimeType>text/html</mimeType>
+</config>
+
+','2019-02-01 11:49:04');

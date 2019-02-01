@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <backup>
-	<date>2019-02-01 11:19:12</date>
-	<requiredTime>260</requiredTime>
+	<date>2019-02-01 17:34:39</date>
+	<requiredTime>234</requiredTime>
 	<subfolder>develop</subfolder>
 	<componentsHistory>
 		<component code="entandoCore" date="2019-01-31 15:28:47" status="OK">
@@ -99,43 +99,43 @@
 		</component>
 	</componentsHistory>
 	<datasource name="servDataSource">
-		<table name="actionlogcommentrecords" requiredTime="7" rows="0" />
-		<table name="actionloglikerecords" requiredTime="5" rows="0" />
-		<table name="actionlogrecords" requiredTime="6" rows="14" />
-		<table name="actionlogrelations" requiredTime="6" rows="14" />
+		<table name="actionlogcommentrecords" requiredTime="4" rows="0" />
+		<table name="actionloglikerecords" requiredTime="4" rows="0" />
+		<table name="actionlogrecords" requiredTime="5" rows="17" />
+		<table name="actionlogrelations" requiredTime="5" rows="19" />
 		<table name="api_oauth_consumers" requiredTime="5" rows="2" />
-		<table name="api_oauth_tokens" requiredTime="5" rows="15" />
+		<table name="api_oauth_tokens" requiredTime="5" rows="1" />
 		<table name="apicatalog_methods" requiredTime="4" rows="0" />
 		<table name="apicatalog_services" requiredTime="4" rows="0" />
-		<table name="authgroups" requiredTime="4" rows="2" />
+		<table name="authgroups" requiredTime="3" rows="2" />
 		<table name="authpermissions" requiredTime="4" rows="10" />
-		<table name="authrolepermissions" requiredTime="4" rows="1" />
-		<table name="authroles" requiredTime="5" rows="1" />
-		<table name="authusergrouprole" requiredTime="3" rows="1" />
+		<table name="authrolepermissions" requiredTime="3" rows="1" />
+		<table name="authroles" requiredTime="4" rows="1" />
+		<table name="authusergrouprole" requiredTime="4" rows="1" />
 		<table name="authuserprofileattrroles" requiredTime="9" rows="0" />
 		<table name="authuserprofiles" requiredTime="4" rows="1" />
 		<table name="authuserprofilesearch" requiredTime="9" rows="0" />
-		<table name="authusers" requiredTime="4" rows="1" />
-		<table name="authusershortcuts" requiredTime="12" rows="1" />
+		<table name="authusers" requiredTime="6" rows="1" />
+		<table name="authusershortcuts" requiredTime="9" rows="1" />
 		<table name="dataobjectattributeroles" requiredTime="9" rows="0" />
-		<table name="dataobjectmodels" requiredTime="5" rows="0" />
-		<table name="dataobjectrelations" requiredTime="10" rows="0" />
-		<table name="dataobjects" requiredTime="15" rows="0" />
+		<table name="dataobjectmodels" requiredTime="4" rows="0" />
+		<table name="dataobjectrelations" requiredTime="11" rows="0" />
+		<table name="dataobjects" requiredTime="11" rows="0" />
 		<table name="dataobjectsearch" requiredTime="8" rows="0" />
 	</datasource>
 	<datasource name="portDataSource">
 		<table name="categories" requiredTime="4" rows="1" />
-		<table name="guifragment" requiredTime="12" rows="38" />
-		<table name="localstrings" requiredTime="10" rows="222" />
-		<table name="pagemodels" requiredTime="4" rows="2" />
+		<table name="guifragment" requiredTime="8" rows="39" />
+		<table name="localstrings" requiredTime="9" rows="222" />
+		<table name="pagemodels" requiredTime="5" rows="2" />
 		<table name="pages" requiredTime="4" rows="7" />
-		<table name="pages_metadata_draft" requiredTime="5" rows="7" />
+		<table name="pages_metadata_draft" requiredTime="4" rows="7" />
 		<table name="pages_metadata_online" requiredTime="5" rows="7" />
-		<table name="sysconfig" requiredTime="3" rows="6" />
-		<table name="uniquekeys" requiredTime="4" rows="1" />
-		<table name="widgetcatalog" requiredTime="4" rows="10" />
-		<table name="widgetconfig" requiredTime="3" rows="4" />
-		<table name="widgetconfig_draft" requiredTime="3" rows="4" />
+		<table name="sysconfig" requiredTime="4" rows="6" />
+		<table name="uniquekeys" requiredTime="3" rows="1" />
+		<table name="widgetcatalog" requiredTime="4" rows="11" />
+		<table name="widgetconfig" requiredTime="4" rows="4" />
+		<table name="widgetconfig_draft" requiredTime="4" rows="4" />
 	</datasource>
 </backup>
 
