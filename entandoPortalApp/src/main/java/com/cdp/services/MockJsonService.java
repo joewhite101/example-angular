@@ -76,6 +76,16 @@ HttpStatus statusCode = responseEntity.getStatusCode();
         return Arrays.asList(portalusers);
         //log.info(quote.toString());
     }
+
+    public Portaluser getPortalUserById (String id){
+
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Portaluser> responseEntityPortalusers=   restTemplate.getForEntity("https://jsonplaceholder.typicode.com/users/"+id, Portaluser.class);
+        Portaluser portaluser = responseEntityPortalusers.getBody();
+        return portaluser;
+        //log.info(quote.toString());
+    }
     
     public static void main( String[] args ){
         System.out.println( "Hello World!" );
