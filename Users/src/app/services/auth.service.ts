@@ -5,7 +5,7 @@ export class AuthService {
   // loggedIn = false;
   // user: User;
 
-  constructor(localStorage: WindowLocalStorage) {}
+  constructor() {}
 
   getToken(): string {
     const accessToken = localStorage.getItem('accessToken');
