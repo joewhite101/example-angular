@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { UsersTableComponent } from './users-table/users-table.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserShowComponent } from './user-show/user-show.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserShowComponent } from './user-show/user-show.component';
   ],
   imports: [
     HttpClientModule,
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [
     UsersService

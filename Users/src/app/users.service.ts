@@ -1,5 +1,5 @@
 import { ResponseUsers, ResponseUser } from './domain/response';
-import { Injectable, Inject, OnInit } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
@@ -11,13 +11,14 @@ export class UsersService implements OnInit {
   constructor(private httpClient: HttpClient) { }
 
   ngOnInit(): void {
-    this.baseUrl = window['baseUrl'];
+    this.baseUrl = window['PROPERTY']['baseUrl'];
   }
   getAll(): Observable<ResponseUsers> {
     return this.httpClient.get<ResponseUsers>(this.baseUrl + '/api/portalDemo/users');
   }
 
   getById(id: number): Observable<ResponseUser> {
+    console.log('windows', this.baseUrl);
     console.log('base url', this.baseUrl);
     return this.httpClient.get<ResponseUser>(this.baseUrl + '/api/portalDemo/users/' + id);
   }
