@@ -8,7 +8,7 @@ export class AuthService {
   constructor() {}
 
   getToken(): string {
-    const accessToken = localStorage.getItem('accessToken');
+    const accessToken = window['accessToken'];
     console.log('ACCESS TOKEN', accessToken);
     return accessToken;
   }
